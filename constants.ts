@@ -2,9 +2,10 @@ import { Shield, PenTool, BarChart3, ShoppingBag, Factory, Laptop, AlertTriangle
 import { ServiceItem, PainPoint, Persona, FAQItem } from "./types";
 
 export const CONTACT_INFO = {
-  whatsapp: "5511999999999", // Placeholder
-  whatsappDisplay: "(11) 99999-9999",
-  instagram: "@areis.empresarial",
+  whatsapp: "5511956568888",
+  whatsappDisplay: "(11) 95656-8888",
+  instagram: "@areisempresarial",
+  instagramUrl: "https://www.instagram.com/areisempresarial/",
   location: "São Paulo - SP",
 };
 
