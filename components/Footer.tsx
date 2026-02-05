@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                     Segurança jurídica estratégica para o seu crescimento.
                 </p>
                 <div className="flex gap-4">
-                    <a href={`https://instagram.com/${CONTACT_INFO.instagram}`} className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors">
+                    <a href={CONTACT_INFO.instagramUrl} className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors">
                         <Instagram size={20} />
                     </a>
                     <a href={`https://wa.me/${CONTACT_INFO.whatsapp}`} className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-600 transition-colors">
