@@ -4,7 +4,7 @@ import { ServiceItem, PainPoint, Persona, FAQItem } from "./types";
 export const CONTACT_INFO = {
   whatsapp: "5511956568888",
   whatsappDisplay: "(11) 95656-8888",
-  instagram: "areisempresarial",
+  instagram: "@areisempresarial",
   instagramUrl: "https://www.instagram.com/areisempresarial/",
   location: "São Paulo - SP",
 };
