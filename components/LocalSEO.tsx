@@ -37,7 +37,7 @@ const LocalSEO: React.FC = () => {
                         href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=Olá, sou da região de SP e gostaria de proteger minha marca.`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-3 bg-brand-accent hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-lg transition-colors"
+                        className="inline-flex items-center gap-3 bg-brand-accent hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition-colors"
                     >
                         Agendar reunião <ArrowRight size={20} />
                     </a>

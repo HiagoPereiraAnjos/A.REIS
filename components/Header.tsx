@@ -26,6 +26,7 @@ const Header: React.FC = () => {
   const navLinks = [
     { name: 'Início', href: '#home' },
     { name: 'Quem Somos', href: '#quem-somos' },
+    { name: 'Advogados', href: '#advogados' },
     { name: 'Serviços', href: '#servicos' },
     { name: 'Para Quem', href: '#para-quem' },
     { name: 'Regiões', href: '#local' },
@@ -33,7 +34,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-brand-light/95 shadow-md py-2 border-b border-gray-200 backdrop-blur-sm' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         {/* Logo Area */}
         <a 
@@ -41,7 +42,7 @@ const Header: React.FC = () => {
           onClick={(e) => handleNavClick(e, '#home')} 
           className="flex items-center gap-2 group cursor-pointer"
         >
-            <div className={`p-2 rounded-lg transition-colors ${scrolled ? 'bg-brand-primary text-white' : 'bg-white text-brand-primary'}`}>
+            <div className={`p-2 rounded-lg transition-colors ${scrolled ? 'bg-brand-primary text-white' : 'bg-gray-50 text-brand-primary'}`}>
                 <ShieldCheck size={28} />
             </div>
             <div className="flex flex-col">
@@ -70,7 +71,7 @@ const Header: React.FC = () => {
             href={`https://wa.me/${CONTACT_INFO.whatsapp}`} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-brand-accent hover:bg-yellow-600 text-white px-5 py-2 rounded-full font-bold text-sm transition-all transform hover:scale-105 cursor-pointer"
+            className="bg-brand-accent hover:bg-purple-700 text-white px-5 py-2 rounded-full font-bold text-sm transition-all transform hover:scale-105 cursor-pointer"
           >
             Fale Conosco
           </a>
@@ -80,15 +81,15 @@ const Header: React.FC = () => {
         <button 
           className="md:hidden text-brand-accent"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
+          aria-label="Abrir menu"
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} color={scrolled ? '#1e293b' : '#ffffff'} />}
+          {isOpen ? <X size={28} /> : <Menu size={28} color={scrolled ? '#374151' : '#ffffff'} />}
         </button>
       </div>
 
       {/* Mobile Nav Overlay */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 py-4 px-4 flex flex-col gap-4">
+        <div className="md:hidden absolute top-full left-0 w-full bg-brand-light shadow-xl border-t border-gray-200 py-4 px-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <a 
               key={link.name} 
@@ -103,7 +104,7 @@ const Header: React.FC = () => {
             href={`https://wa.me/${CONTACT_INFO.whatsapp}`} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-green-600 text-white text-center py-3 rounded-lg font-bold mt-2 cursor-pointer"
+            className="bg-brand-accent hover:bg-purple-700 text-white text-center py-3 rounded-lg font-bold mt-2 cursor-pointer transition-colors"
           >
             WhatsApp
           </a>

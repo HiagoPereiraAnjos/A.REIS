@@ -5,7 +5,7 @@ import { FAQ_ITEMS } from '../constants';
 
 const FAQ: React.FC = () => {
   return (
-    <section id="faq" className="py-20 bg-gray-50 scroll-mt-28">
+    <section id="faq" className="py-20 bg-brand-light scroll-mt-28">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-primary mb-4">

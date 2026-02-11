@@ -24,3 +24,9 @@ export interface FAQItem {
   question: string;
   answer: string;
 }
+
+export interface Lawyer {
+  name: string;
+  role: string;
+  photo: string;
+}

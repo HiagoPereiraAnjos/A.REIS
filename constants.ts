@@ -1,5 +1,5 @@
 import { Shield, PenTool, BarChart3, ShoppingBag, Factory, Laptop, AlertTriangle } from "lucide-react";
-import { ServiceItem, PainPoint, Persona, FAQItem } from "./types";
+import { ServiceItem, PainPoint, Persona, FAQItem, Lawyer } from "./types";
 
 export const CONTACT_INFO = {
   whatsapp: "5511956568888",
@@ -107,5 +107,28 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "Marca registrada é um ativo empresarial?",
     answer: "Sim. Uma marca registrada pode ser vendida, licenciada ou franqueada, tornando-se muitas vezes o bem mais valioso da empresa."
+  }
+];
+
+export const LAWYERS: Lawyer[] = [
+  {
+    name: "Dra. Amanda Reis",
+    role: "Proteção de Marcas e Ativos Intangíveis",
+    photo: "https://picsum.photos/seed/amanda-reis/500/500"
+  },
+  {
+    name: "Dr. Rafael Mendes",
+    role: "Registro de Marcas e Estratégia Empresarial",
+    photo: "https://picsum.photos/seed/rafael-mendes/500/500"
+  },
+  {
+    name: "Dra. Camila Oliveira",
+    role: "Direito Autoral e Desenho Industrial",
+    photo: "https://picsum.photos/seed/camila-oliveira/500/500"
+  },
+  {
+    name: "Dr. Felipe Martins",
+    role: "Contencioso de Propriedade Intelectual",
+    photo: "https://picsum.photos/seed/felipe-martins/500/500"
   }
 ];

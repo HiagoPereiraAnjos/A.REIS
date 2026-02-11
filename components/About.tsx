@@ -11,7 +11,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="quem-somos" className="py-20 bg-white scroll-mt-28">
+    <section id="quem-somos" className="py-20 bg-brand-light scroll-mt-28">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -21,7 +21,7 @@ const About: React.FC = () => {
                 <div className="w-24 h-1 bg-brand-accent mx-auto rounded-full"></div>
             </div>
 
-            <div className="bg-brand-light p-8 md:p-12 rounded-2xl border border-gray-100 shadow-lg">
+            <div className="bg-gray-50 p-8 md:p-12 rounded-2xl border border-gray-200 shadow-lg">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
                     A <strong>A.Reis Empresarial</strong> é a unidade especializada em <span className="text-brand-primary font-semibold">proteção preventiva, gestão estratégica e valorização de marcas</span>, atuando de forma <strong>empresarial e comercial</strong>, sem caráter jurídico-contencioso.
                 </p>

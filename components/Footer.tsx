@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                     <a href={instagramUrl} className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors">
                         <Instagram size={20} />
                     </a>
-                    <a href={`https://wa.me/${CONTACT_INFO.whatsapp}`} className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-600 transition-colors">
+                    <a href={`https://wa.me/${CONTACT_INFO.whatsapp}`} className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors">
                         <MessageCircle size={20} />
                     </a>
                 </div>
@@ -40,6 +40,7 @@ const Footer: React.FC = () => {
                 <ul className="space-y-2 text-gray-400">
                     <li><a href="#home" className="hover:text-white">Início</a></li>
                     <li><a href="#quem-somos" className="hover:text-white">A Empresa</a></li>
+                    <li><a href="#advogados" className="hover:text-white">Advogados</a></li>
                     <li><a href="#servicos" className="hover:text-white">Serviços</a></li>
                     <li><a href="#faq" className="hover:text-white">Dúvidas</a></li>
                 </ul>

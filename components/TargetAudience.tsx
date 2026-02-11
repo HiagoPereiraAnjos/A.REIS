@@ -3,7 +3,7 @@ import { PERSONAS } from '../constants';
 
 const TargetAudience: React.FC = () => {
   return (
-    <section id="para-quem" className="py-20 bg-white scroll-mt-28">
+    <section id="para-quem" className="py-20 bg-brand-light scroll-mt-28">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
             <div>

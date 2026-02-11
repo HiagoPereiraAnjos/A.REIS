@@ -7,7 +7,7 @@ const WhatsAppButton: React.FC = () => {
       href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=Olá, vi o site da A.Reis e gostaria de proteger minha marca.`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white p-4 rounded-full shadow-2xl transition-all transform hover:scale-110 flex items-center justify-center group"
+      className="fixed bottom-6 right-6 z-50 bg-brand-accent hover:bg-purple-700 text-white p-4 rounded-full shadow-2xl transition-all transform hover:scale-110 flex items-center justify-center group"
       aria-label="Fale conosco no WhatsApp"
     >
       <svg

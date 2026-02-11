@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
               href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-brand-accent hover:bg-yellow-600 text-white text-center px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-lg shadow-brand-accent/20 flex items-center justify-center gap-2 group"
+              className="bg-brand-accent hover:bg-purple-700 text-white text-center px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-lg shadow-brand-accent/20 flex items-center justify-center gap-2 group"
             >
               Quero proteger minha marca
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
