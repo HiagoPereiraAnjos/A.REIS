@@ -119,3 +119,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   }
 ];
 
+// Backward compatibility for stale deploys that still compile components/Lawyers.tsx.
+export const LAWYERS: Lawyer[] = [];
+
+
