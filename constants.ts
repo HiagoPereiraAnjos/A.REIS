@@ -1,5 +1,5 @@
 import { Shield, PenTool, BarChart3, ShoppingBag, Factory, Laptop, AlertTriangle } from "lucide-react";
-import { ServiceItem, PainPoint, Persona, FAQItem, BrandAssets } from "./types";
+import { ServiceItem, PainPoint, Persona, FAQItem, BrandAssets, Lawyer } from "./types";
 
 export const CONTACT_INFO = {
   whatsapp: "5511956568888",
@@ -121,5 +121,3 @@ export const FAQ_ITEMS: FAQItem[] = [
 
 // Backward compatibility for stale deploys that still compile components/Lawyers.tsx.
 export const LAWYERS: Lawyer[] = [];
-
-
