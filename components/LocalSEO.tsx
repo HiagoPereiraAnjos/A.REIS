@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { BRAND_ASSETS, CONTACT_INFO } from '../constants';
 
@@ -44,14 +44,16 @@ const LocalSEO: React.FC = () => {
             </a>
           </div>
 
-          <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 bg-gradient-to-br from-brand-dark/70 to-brand-primary/80">
-            {!imageFailed && (
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 bg-gradient-to-br from-brand-dark/70 to-brand-primary/80">
+            {!imageFailed ? (
               <img
                 src={BRAND_ASSETS.localImage}
                 alt="Arte institucional A.Reis para negocios de Sao Paulo"
-                className="w-full h-full object-cover"
+                className="w-full h-auto block object-contain"
                 onError={() => setImageFailed(true)}
               />
+            ) : (
+              <div className="w-full aspect-[3/2]"></div>
             )}
             <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 to-transparent"></div>
           </div>
