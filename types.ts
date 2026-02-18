@@ -31,9 +31,3 @@ export interface BrandAssets {
   localImage: string;
 }
 
-// Backward compatibility for stale deploys that still compile components/Lawyers.tsx.
-export interface Lawyer {
-  name: string;
-  role: string;
-  photo: string;
-}
