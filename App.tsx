@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
-import Lawyers from './components/Lawyers';
 import Services from './components/Services';
 import TargetAudience from './components/TargetAudience';
 import LocalSEO from './components/LocalSEO';
@@ -17,7 +16,6 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <About />
-        <Lawyers />
         <Services />
         <TargetAudience />
         <LocalSEO />

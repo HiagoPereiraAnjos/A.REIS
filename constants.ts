@@ -1,5 +1,5 @@
 import { Shield, PenTool, BarChart3, ShoppingBag, Factory, Laptop, AlertTriangle } from "lucide-react";
-import { ServiceItem, PainPoint, Persona, FAQItem, Lawyer } from "./types";
+import { ServiceItem, PainPoint, Persona, FAQItem, BrandAssets } from "./types";
 
 export const CONTACT_INFO = {
   whatsapp: "5511956568888",
@@ -7,6 +7,15 @@ export const CONTACT_INFO = {
   instagram: "@areisempresarial",
   instagramUrl: "https://www.instagram.com/areisempresarial/",
   location: "São Paulo - SP",
+};
+export const BRAND_ASSETS: BrandAssets = {
+  logo: "/assets/logo/logo-original-white-bg.png",
+  heroSlides: [
+    "/assets/hero/areis-01.jpg",
+    "/assets/hero/areis-02.jpg",
+    "/assets/hero/areis-03.jpg",
+  ],
+  localImage: "/assets/hero/areis-04.jpg",
 };
 
 export const PAIN_POINTS: PainPoint[] = [
@@ -110,25 +119,3 @@ export const FAQ_ITEMS: FAQItem[] = [
   }
 ];
 
-export const LAWYERS: Lawyer[] = [
-  {
-    name: "Dra. Amanda Reis",
-    role: "Proteção de Marcas e Ativos Intangíveis",
-    photo: "https://picsum.photos/seed/amanda-reis/500/500"
-  },
-  {
-    name: "Dr. Rafael Mendes",
-    role: "Registro de Marcas e Estratégia Empresarial",
-    photo: "https://picsum.photos/seed/rafael-mendes/500/500"
-  },
-  {
-    name: "Dra. Camila Oliveira",
-    role: "Direito Autoral e Desenho Industrial",
-    photo: "https://picsum.photos/seed/camila-oliveira/500/500"
-  },
-  {
-    name: "Dr. Felipe Martins",
-    role: "Contencioso de Propriedade Intelectual",
-    photo: "https://picsum.photos/seed/felipe-martins/500/500"
-  }
-];

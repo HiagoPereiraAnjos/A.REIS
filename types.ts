@@ -25,8 +25,8 @@ export interface FAQItem {
   answer: string;
 }
 
-export interface Lawyer {
-  name: string;
-  role: string;
-  photo: string;
+export interface BrandAssets {
+  logo: string;
+  heroSlides: string[];
+  localImage: string;
 }
