@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { CONTACT_INFO, BRAND_ASSETS } from '../constants';
 import { Instagram, MessageCircle, MapPin } from 'lucide-react';
 
@@ -29,10 +29,20 @@ const Footer: React.FC = () => {
               Seguranca estrategica para o seu crescimento.
             </p>
             <div className="flex gap-4">
-              <a href={instagramUrl} className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors">
+              <a
+                href={instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors"
+              >
                 <Instagram size={20} />
               </a>
-              <a href={`https://wa.me/${CONTACT_INFO.whatsapp}`} className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors">
+              <a
+                href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors"
+              >
                 <MessageCircle size={20} />
               </a>
             </div>
@@ -60,13 +70,25 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <MessageCircle className="shrink-0" size={18} />
-                <a href={`https://wa.me/${CONTACT_INFO.whatsapp}`} className="hover:text-white">
+                <a
+                  href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white"
+                >
                   {CONTACT_INFO.whatsappDisplay}
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Instagram className="shrink-0" size={18} />
-                <span>{CONTACT_INFO.instagram}</span>
+                <a
+                  href={instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white"
+                >
+                  {CONTACT_INFO.instagram}
+                </a>
               </li>
             </ul>
           </div>
