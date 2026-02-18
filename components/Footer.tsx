@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { CONTACT_INFO, BRAND_ASSETS } from '../constants';
 import { Instagram, MessageCircle, MapPin } from 'lucide-react';
 
@@ -25,8 +25,8 @@ const Footer: React.FC = () => {
               )}
             </div>
             <p className="text-gray-300 max-w-sm mb-6">
-              Protecao, gestao e valorizacao de marcas empresariais em Sao Paulo.
-              Seguranca estrategica para o seu crescimento.
+              Proteção, gestão e valorização de marcas empresariais em São Paulo. Segurança estratégica para o
+              seu crescimento.
             </p>
             <div className="flex gap-4">
               <a
@@ -51,10 +51,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-lg mb-4 text-brand-accent">Menu</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#home" className="hover:text-white">Inicio</a></li>
+              <li><a href="#home" className="hover:text-white">Início</a></li>
               <li><a href="#quem-somos" className="hover:text-white">A Empresa</a></li>
-              <li><a href="#servicos" className="hover:text-white">Servicos</a></li>
-              <li><a href="#faq" className="hover:text-white">Duvidas</a></li>
+              <li><a href="#servicos" className="hover:text-white">Serviços</a></li>
+              <li><a href="#faq" className="hover:text-white">Dúvidas</a></li>
             </ul>
           </div>
 
@@ -64,8 +64,8 @@ const Footer: React.FC = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="shrink-0 mt-1" size={18} />
                 <span>
-                  Atendimento em Sao Paulo<br />
-                  <span className="text-sm text-gray-400">Bras, Bom Retiro e 25 de Marco</span>
+                  Atendimento em São Paulo<br />
+                  <span className="text-sm text-gray-400">Brás, Bom Retiro e 25 de Março</span>
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
 
       <div className="container mx-auto px-4 md:px-6 pt-8 border-t border-white/10 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
         <p>&copy; {new Date().getFullYear()} A.Reis Empresarial. Todos os direitos reservados.</p>
-        <p>Google Meu Negocio Otimizado</p>
+        <p>Google Meu Negócio Otimizado</p>
       </div>
     </footer>
   );

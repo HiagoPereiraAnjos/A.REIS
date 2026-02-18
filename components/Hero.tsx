@@ -14,15 +14,15 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10 grid md:grid-cols-2 gap-10 items-center">
         <div className="text-white space-y-6">
           <div className="inline-block px-3 py-1 bg-brand-accent/20 border border-brand-accent/50 rounded-full text-brand-accent text-xs font-bold tracking-wider uppercase">
-            Protecao preventiva de marca
+            Proteção preventiva de marca
           </div>
 
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            Blindagem e valorizacao de <span className="text-brand-accent">marcas empresariais</span>
+            Blindagem e valorização de <span className="text-brand-accent">marcas empresariais</span>
           </h1>
 
           <p className="text-lg md:text-xl text-gray-100 font-light border-l-4 border-brand-accent pl-4 max-w-xl">
-            Atuacao estrategica para negocios do Bras, Bom Retiro e Rua 25 de Marco.
+            Atuação estratégica para negócios do Brás, Bom Retiro e Rua 25 de Março.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="mt-6 pt-6 border-t border-white/20 text-center">
-            <p className="text-brand-accent font-bold text-lg">A protecao comeca antes do conflito.</p>
+            <p className="text-brand-accent font-bold text-lg">A proteção começa antes do conflito.</p>
           </div>
         </div>
       </div>

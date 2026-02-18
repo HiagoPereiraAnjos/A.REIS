@@ -5,18 +5,18 @@ import { ArrowRight } from 'lucide-react';
 const serviceVisuals = [
   {
     src: BRAND_ASSETS.heroSlides[0],
-    alt: 'Protecao de marca para negocios com marca propria',
-    label: 'Protecao de marca',
+    alt: 'Proteção de marca para negócios com marca própria',
+    label: 'Proteção de marca',
   },
   {
     src: BRAND_ASSETS.heroSlides[2],
-    alt: 'Exclusividade para estampas e criacoes autorais',
-    label: 'Criacoes e exclusividade',
+    alt: 'Exclusividade para estampas e criações autorais',
+    label: 'Criações e exclusividade',
   },
   {
     src: BRAND_ASSETS.heroSlides[1],
-    alt: 'Blindagem e gestao para crescimento seguro da marca',
-    label: 'Gestao estrategica',
+    alt: 'Blindagem e gestão para crescimento seguro da marca',
+    label: 'Gestão estratégica',
   },
 ];
 
@@ -32,16 +32,19 @@ const Services: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-primary mb-4">
-            Nossas solucoes de protecao
+            Nossas soluções de proteção
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Estrategias completas para blindar seu negocio e garantir exclusividade no mercado.
+            Estratégias completas para blindar seu negócio e garantir exclusividade no mercado.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {SERVICES.map((service, idx) => {
             const visual = serviceVisuals[idx];
+            const whatsappText = encodeURIComponent(
+              `Olá, gostaria de saber mais sobre ${service.title}.`
+            );
 
             return (
               <div
@@ -62,7 +65,7 @@ const Services: React.FC = () => {
                   )}
                   <div className="px-4 py-3">
                     <span className="inline-block bg-brand-accent text-white text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full">
-                      {visual?.label ?? 'Servico'}
+                      {visual?.label ?? 'Serviço'}
                     </span>
                   </div>
                 </div>
@@ -87,9 +90,9 @@ const Services: React.FC = () => {
                 <div className="bg-brand-primary p-6 mt-auto">
                   <p className="text-white/90 text-sm font-medium italic mb-4">{service.highlight}</p>
                   <a
-                    href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=Ola, gostaria de saber mais sobre ${service.title}`}
+                    href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=${whatsappText}`}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="text-brand-accent hover:text-white font-bold text-sm flex items-center gap-2 transition-colors"
                   >
                     Saber mais <ArrowRight size={16} />

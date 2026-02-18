@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { BRAND_ASSETS, CONTACT_INFO } from '../constants';
 
 const LocalSEO: React.FC = () => {
-  const regions = ['Bras', 'Bom Retiro', 'Rua 25 de Marco', 'Centro de Sao Paulo'];
+  const regions = ['Brás', 'Bom Retiro', 'Rua 25 de Março', 'Centro de São Paulo'];
   const [imageFailed, setImageFailed] = useState(false);
+
+  const whatsappText = encodeURIComponent(
+    'Olá, sou da região de SP e gostaria de proteger minha marca.'
+  );
 
   return (
     <section id="local" className="py-20 bg-brand-primary text-white relative overflow-hidden scroll-mt-28">
@@ -15,14 +19,14 @@ const LocalSEO: React.FC = () => {
           <div>
             <div className="inline-flex items-center gap-2 text-brand-accent font-bold uppercase tracking-wider text-sm mb-4">
               <MapPin size={18} />
-              Atuacao local
+              Atuação local
             </div>
             <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-              Atendimento estrategico em <span className="text-brand-accent">Sao Paulo</span>
+              Atendimento estratégico em <span className="text-brand-accent">São Paulo</span>
             </h2>
             <p className="text-gray-100 text-lg mb-8 leading-relaxed">
-              Entendemos a dinamica acelerada do comercio paulistano e protegemos marcas que dependem de exclusividade,
-              agilidade e posicionamento forte.
+              Entendemos a dinâmica acelerada do comércio paulistano e protegemos marcas que dependem de
+              exclusividade, agilidade e posicionamento forte.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -35,12 +39,12 @@ const LocalSEO: React.FC = () => {
             </div>
 
             <a
-              href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=Ola, sou da regiao de SP e gostaria de proteger minha marca.`}
+              href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=${whatsappText}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-brand-accent hover:bg-brand-accent-dark text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
-              Agendar reuniao <ArrowRight size={20} />
+              Agendar reunião <ArrowRight size={20} />
             </a>
           </div>
 
@@ -48,7 +52,7 @@ const LocalSEO: React.FC = () => {
             {!imageFailed ? (
               <img
                 src={BRAND_ASSETS.localImage}
-                alt="Arte institucional A.Reis para negocios de Sao Paulo"
+                alt="Arte institucional A.Reis para negócios de São Paulo"
                 className="w-full h-auto block object-contain"
                 onError={() => setImageFailed(true)}
               />

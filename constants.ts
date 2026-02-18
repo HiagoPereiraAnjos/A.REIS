@@ -1,5 +1,5 @@
-import { Shield, PenTool, BarChart3, ShoppingBag, Factory, Laptop, AlertTriangle } from "lucide-react";
-import { ServiceItem, PainPoint, Persona, FAQItem, BrandAssets, Lawyer } from "./types";
+﻿import { Shield, PenTool, BarChart3, ShoppingBag, Factory, Laptop } from "lucide-react";
+import { ServiceItem, PainPoint, Persona, FAQItem, BrandAssets } from "./types";
 
 export const CONTACT_INFO = {
   whatsapp: "5511956568888",
@@ -8,6 +8,7 @@ export const CONTACT_INFO = {
   instagramUrl: "https://www.instagram.com/areisempresarial/",
   location: "São Paulo - SP",
 };
+
 export const BRAND_ASSETS: BrandAssets = {
   logo: "/assets/logo/logo-original-white-bg.png",
   heroSlides: [
@@ -34,9 +35,10 @@ export const SERVICES: ServiceItem[] = [
       "Registro de marca no Brasil",
       "Análise de risco antes do registro",
       "Monitoramento contra cópias e uso indevido",
-      "Organização e blindagem do portfólio de marcas"
+      "Organização e blindagem do portfólio de marcas",
     ],
-    highlight: "Ideal para empresas do Brás, Bom Retiro e Rua 25 de Março que trabalham com marca própria."
+    highlight:
+      "Ideal para empresas do Brás, Bom Retiro e Rua 25 de Março que trabalham com marca própria.",
   },
   {
     id: "protecao-criacoes",
@@ -46,9 +48,9 @@ export const SERVICES: ServiceItem[] = [
       "Registro de estampas exclusivas",
       "Registro de desenho industrial",
       "Registro de direito autoral",
-      "Organização do acervo criativo da empresa"
+      "Organização do acervo criativo da empresa",
     ],
-    highlight: "O que é exclusivo precisa ser protegido."
+    highlight: "O que é exclusivo precisa ser protegido.",
   },
   {
     id: "gestao-marca",
@@ -58,10 +60,10 @@ export const SERVICES: ServiceItem[] = [
       "Orientação de uso correto da marca",
       "Padronização e boas práticas",
       "Prevenção de perda ou nulidade",
-      "Apoio estratégico para expansão e crescimento"
+      "Apoio estratégico para expansão e crescimento",
     ],
-    highlight: "Gestão estratégica da marca como ativo empresarial."
-  }
+    highlight: "Gestão estratégica da marca como ativo empresarial.",
+  },
 ];
 
 export const PERSONAS: Persona[] = [
@@ -72,9 +74,9 @@ export const PERSONAS: Persona[] = [
       "Lojas físicas e online",
       "Marcas próprias",
       "Estampas exclusivas",
-      "Atacado e varejo"
+      "Atacado e varejo",
     ],
-    pain: "Principais dores: cópia, concorrência desleal, bloqueio de marca."
+    pain: "Principais dores: cópia, concorrência desleal e bloqueio de marca.",
   },
   {
     title: "Indústria e Importadores",
@@ -82,42 +84,40 @@ export const PERSONAS: Persona[] = [
     items: [
       "Produtos próprios",
       "Design diferenciado",
-      "Interesse em exclusividade e proteção de mercado"
-    ]
+      "Interesse em exclusividade e proteção de mercado",
+    ],
   },
   {
     title: "Empreendedores Digitais",
     icon: Laptop,
-    items: [
-      "E-commerce",
-      "Influenciadores com marca própria",
-      "Produtos autorais"
-    ]
-  }
+    items: ["E-commerce", "Influenciadores com marca própria", "Produtos autorais"],
+  },
 ];
 
 export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "Por que registrar minha marca antes de crescer?",
-    answer: "O registro garante a propriedade. Sem ele, todo o valor que você constrói na sua marca pode ser perdido ou tomado por terceiros, gerando prejuízos imensos."
+    answer:
+      "O registro garante a propriedade. Sem ele, todo o valor que você constrói na sua marca pode ser perdido ou tomado por terceiros, gerando prejuízos imensos.",
   },
   {
     question: "Qual o risco de não proteger uma estampa?",
-    answer: "Sem proteção, concorrentes podem copiar seus designs exclusivos e vender mais barato, diluindo sua exclusividade e suas margens de lucro."
+    answer:
+      "Sem proteção, concorrentes podem copiar seus designs exclusivos e vender mais barato, diluindo sua exclusividade e suas margens de lucro.",
   },
   {
     question: "Registro de marca protege contra cópia?",
-    answer: "Sim, o registro é a única forma legal de garantir o uso exclusivo da marca em seu segmento e impedir que terceiros a utilizem indevidamente."
+    answer:
+      "Sim, o registro é a única forma legal de garantir o uso exclusivo da marca em seu segmento e impedir que terceiros a utilizem indevidamente.",
   },
   {
     question: "Quem atua no Brás precisa proteger a marca?",
-    answer: "Absolutamente. Regiões de alto comércio como o Brás são focos de concorrência intensa. Ter a marca protegida é o que diferencia um negócio sério de um temporário."
+    answer:
+      "Absolutamente. Regiões de alto comércio como o Brás são focos de concorrência intensa. Ter a marca protegida é o que diferencia um negócio sério de um temporário.",
   },
   {
     question: "Marca registrada é um ativo empresarial?",
-    answer: "Sim. Uma marca registrada pode ser vendida, licenciada ou franqueada, tornando-se muitas vezes o bem mais valioso da empresa."
-  }
+    answer:
+      "Sim. Uma marca registrada pode ser vendida, licenciada ou franqueada, tornando-se muitas vezes o bem mais valioso da empresa.",
+  },
 ];
-
-// Backward compatibility for stale deploys that still compile components/Lawyers.tsx.
-export const LAWYERS: Lawyer[] = [];
